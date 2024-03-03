@@ -18,7 +18,8 @@ public class Program
             Console.WriteLine("4. Удалить контакт");
             Console.WriteLine("5. Поиск контакта");
             Console.WriteLine("6. Сохранить книгу");
-            Console.WriteLine("7. Выйти");
+            Console.WriteLine("7. Загрузить книгу");
+            Console.WriteLine("8. Выйти");
 
             int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -43,6 +44,9 @@ public class Program
                     _phoneBook.SaveBook();
                     break;
                 case 7:
+                    _phoneBook.LoadBook();
+                    break;
+                case 8:
                     isRunning = false;
                     break;
                 default:
